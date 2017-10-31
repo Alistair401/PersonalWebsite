@@ -1,0 +1,28 @@
+#welcome-banner {
+    margin-top: 100px;
+}
+
+#github-heading {
+    margin-top: 20px;
+}
+
+#github-heading div {
+    display: inline-block;
+}
+
+#contact-banner * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+#linkedin-button {
+    background-color: #0077B5;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        display: none;
+    }
+}
