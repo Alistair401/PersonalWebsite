@@ -27,6 +27,14 @@ router.route('/github').get(function (req, res) {
     };
     console.log('DEBUG: requesting repos from https://api.github.com/users/Alistair401/repos');
     request(request_options, function (error, response, body) {
+        if (error) {
+            console.log('DEBUG: error retrieving github repos - ' + error);
+            return res.json([{
+                name: 'error',
+                language: 'error',
+                html_url: 'error'
+            }])
+        }
         res.json(JSON.parse(body));
     });
 });

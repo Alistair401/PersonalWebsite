@@ -2,6 +2,7 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/easeljs-0.8.2.min.js"></script>
     <script src="js/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -9,9 +10,11 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Alistair Miles</title>
 </head>
 
 <body>
+    <canvas id="background"></canvas>
     <div class="container">
         <div id="welcome-banner" class="row">
             <h1>Hi</h1>
@@ -23,18 +26,25 @@
                 </h5>
             </div>
             <div>
-                <button id="contact-button">Contact</button>
-            </div>
-            <div>
-                <button id="linkedin-button">LinkedIn</button>
+                <div>
+                    <button id="contact-button">Contact</button>
+                </div>
+                <div>
+                    <button id="linkedin-button">LinkedIn</button>
+                </div>
             </div>
         </div>
         <div class="row" id="github-heading">
             <div>
-                <img width="24px" src="images/github.svg">
-            </div>
-            <div>
                 <h5>My GitHub work:</h5>
+            </div>
+            <div id="github-aside">
+                <div>
+                    <img width="24px" src="images/github.svg" />
+                </div>
+                <button id="github-button">      
+                    See more...
+                </button>
             </div>
         </div>
         <div class="row">
@@ -43,7 +53,6 @@
                     <tr>
                         <th>Repository</th>
                         <th>Language</th>
-                        <th class="description">Description</th>
                     </tr>
                 </thead>
                 <tbody>
