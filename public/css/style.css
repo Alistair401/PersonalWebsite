@@ -2,16 +2,16 @@
     margin-top: 100px;
 }
 
-#github-heading {
+.heading {
     margin-top: 20px;
 }
 
-#github-heading div {
+.heading div {
     display: inline-block;
     vertical-align: middle;
 }
 
-#github-heading div * {
+.heading div * {
     margin-bottom: 0;
 }
 
@@ -28,6 +28,11 @@
 
 #linkedin-button {
     background-color: #0077B5;
+    color: white;
+}
+
+#cv-button {
+    background-color: red;
     color: white;
 }
 

@@ -18,6 +18,9 @@ $(document).ready(function () {
     $("#github-button").click(() => {
         redirect('https://www.github.com/Alistair401');
     });
+    $("#cv-button").click(() => {
+        redirect('https://drive.google.com/open?id=1lmW5SUeP5dYx6iEtySuP-o-C2Ee5D6tc');
+    });
 });
 
 function generateTableRow(name, language, url) {
