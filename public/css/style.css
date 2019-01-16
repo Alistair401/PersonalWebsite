@@ -1,8 +1,8 @@
-#welcome-banner {
+.welcome-banner {
     margin-top: 100px;
 }
 
-.heading {
+.top-margin {
     margin-top: 20px;
 }
 
@@ -21,6 +21,12 @@
 }
 
 #contact-banner * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+#project-selector * {
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 0;
@@ -47,4 +53,20 @@
 #repository-table tbody tr:hover {
     cursor: pointer;
     background-color: whitesmoke;
+}
+
+.hidden {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.centered {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
 }

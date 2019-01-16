@@ -12,15 +12,6 @@ $(document).ready(function () {
     $("#contact-button").click(() => {
         location.href = 'mailto:ajrmiles@gmail.com'
     });
-    $("#linkedin-button").click(() => {
-        redirect('https://www.linkedin.com/in/alistair-miles');
-    });
-    $("#github-button").click(() => {
-        redirect('https://www.github.com/Alistair401');
-    });
-    $("#cv-button").click(() => {
-        redirect('https://drive.google.com/open?id=1lmW5SUeP5dYx6iEtySuP-o-C2Ee5D6tc');
-    });
 });
 
 function generateTableRow(name, language, url) {
@@ -80,4 +71,15 @@ function compareRepoDates(a, b) {
 
 function redirect(url) {
     window.open(url, '_blank');
+}
+
+function redirectGithub(project) {
+    redirect('https://www.github.com/Alistair401/' + project)
+}
+
+var revealed_id;
+function reveal(id) {
+    if (revealed_id) $(`#${revealed_id}`).addClass('hidden')
+    $(`#${id}`).removeClass('hidden')
+    revealed_id = id
 }
