@@ -77,7 +77,7 @@ function redirectGithub(project) {
     redirect('https://www.github.com/Alistair401/' + project)
 }
 
-var revealed_id;
+var revealed_id = "default-project";
 function reveal(id) {
     if (revealed_id) $(`#${revealed_id}`).addClass('hidden')
     $(`#${id}`).removeClass('hidden')

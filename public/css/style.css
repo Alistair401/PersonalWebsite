@@ -70,3 +70,15 @@
 .full-width {
     width: 100%;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.large-font {
+    font-size: 1.5rem
+}
+
+.vertical-aligned {
+    vertical-align: middle;
+}

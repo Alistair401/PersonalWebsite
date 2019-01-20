@@ -27,10 +27,12 @@
                     <button id="contact-button"><img width="24px" src="images/envelope-o.svg" /></button>
                 </div>
                 <div>
-                    <button id="linkedin-button" onclick="redirect('https://www.linkedin.com/in/alistair-miles')"><img width="24px" src="images/linkedin-square.svg" /></button>
+                    <button id="linkedin-button" onclick="redirect('https://www.linkedin.com/in/alistair-miles')"><img
+                            width="24px" src="images/linkedin-square.svg" /></button>
                 </div>
                 <div>
-                    <button id="cv-button" onclick="redirect('https://drive.google.com/open?id=1lmW5SUeP5dYx6iEtySuP-o-C2Ee5D6tc')"><img width="24px" src="images/file-pdf-o.svg" /></button>
+                    <button id="cv-button" onclick="redirect('https://drive.google.com/open?id=1lmW5SUeP5dYx6iEtySuP-o-C2Ee5D6tc')"><img
+                            width="24px" src="images/file-pdf-o.svg" /></button>
                 </div>
             </div>
         </div>
@@ -41,19 +43,24 @@
                 </h5>
             </div>
             <div>
-                <button onclick="reveal('hermitage')">Hermitage</button>
+                <button class="button-primary large-font" onclick="reveal('hermitage')">Hermitage</button>
             </div>
             <div>
-                <button onclick="reveal('assimpviewer')">AssimpViewer</button>
+                <button class="button-primary large-font" onclick="reveal('assimpviewer')">AssimpViewer</button>
             </div>
             <div>
-                <button onclick="reveal('ecs')">ECS</button>
+                <button class="button-primary large-font" onclick="reveal('ecs')">ECS</button>
             </div>
             <div>
-                <button onclick="reveal('crowdpathfinding')">CrowdPathfinding</button>
+                <button class="button-primary large-font" onclick="reveal('crowdpathfinding')">CrowdPathfinding</button>
             </div>
         </div>
-        <div>
+        <div class="row">
+            <div id="default-project">
+                <div class="top-margin inline-block">
+                    Click a project for more information <img class="inline-block vertical-aligned" width="24px" src="images/arrow-up.svg" />
+                </div>
+            </div>
             <div id="hermitage" class="hidden">
                 <div class="heading top-margin">
                     <div>
@@ -64,7 +71,6 @@
 
 
                 </div>
-
                 <p class="top-margin">
                     Hermitage is an ongoing project that I work on in my free time.
                     Hermitage is an open-world simulation game set in the highlands of Scotland with planned
@@ -77,6 +83,17 @@
                     The procedurally generated castles use rooms designed in Minecraft and are loaded as voxel
                     models for simple but effective content creation.
                 </p>
+                <div class="four columns">
+                    <p>
+                        Technologies:
+                        <ul>
+                            <li>C++</li>
+                            <li>Irrlicht</li>
+                            <li>entt</li>
+                            <li>OpenGL</li>
+                        </ul>
+                    </p>
+                </div>
                 <div class="full-width centered">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/3YcMqvg5PBo" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -103,6 +120,16 @@
                     to time constraints and a quickly ballooning scope.
                     This project was done entirely in my personal time.
                 </p>
+                <div class="four columns">
+                    <p>
+                        Technologies:
+                        <ul>
+                            <li>C++</li>
+                            <li>OpenGL</li>
+                            <li>Assimp</li>
+                        </ul>
+                    </p>
+                </div>
                 <div class="full-width centered">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/0WaFJxPT3ec" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -118,9 +145,19 @@
                     </div>
                 </div>
                 <p class="top-margin">
-                    A simple but extensible implementation of an Entity Component System library written in modern C++.
+                    A simple but extensible implementation of an Entity Component System library written in modern C++
+                    with no dependencies other than the STL and GTest for unit tests.
                     Uses principals described by <a href="https://www.youtube.com/watch?v=NTWSeQtHZ9M">Vittorio Romeo</a>.
                 </p>
+                <div class="four columns">
+                    <p>
+                        Technologies:
+                        <ul>
+                            <li>C++</li>
+                            <li>GTest</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
             <div id="crowdpathfinding" class="hidden">
                 <div class="heading top-margin">
@@ -144,6 +181,18 @@
                     render sample environments.
                     The full dissertation is available <a href="https://drive.google.com/open?id=1yg9DBGO7xyUpobA2p2G_U_nPhJ6h0aOn">here</a>.
                 </p>
+                <div class="four columns">
+                    <p>
+                        Technologies:
+                        <ul>
+                            <li>C++</li>
+                            <li>Javascript</li>
+                            <li>OpenGL</li>
+                            <li>Cairo</li>
+                            <li>GTK</li>
+                        </ul>
+                    </p>
+                </div>
                 <div class="full-width centered">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4NSEaS5xE0g" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -153,7 +202,7 @@
         </div>
         <div class="row heading top-margin">
             <div>
-                <h5>My GitHub work:</h5>
+                <h5>My other work:</h5>
             </div>
             <div id="github-aside">
                 <div>
